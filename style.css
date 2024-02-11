@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: bold;
+  font-weight: 500;
+  src: url(./fonts/Roboto-Medium.ttf);
+}
+
+header {
+  background: #131417;
+  width: 100%;
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item {
+  color: white;
+  font-family: Roboto;
+}
+
+.logo__circle {
+  background: #131417;
+  border-radius: 50%;
+  border: 4px solid #2d9cdb;
+  aspect-ratio: 1/1;
+  width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Убираем дефолтные стили для ссылок */
+a {
+  text-decoration: none;
+  color: inherit; /* Наследование цвета от родительского элемента */
+}

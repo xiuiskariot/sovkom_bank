@@ -21,15 +21,47 @@ header {
   background: #131417;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  padding: 16px 122px;
 }
 
 .nav-list {
   display: flex;
+  gap: 40px;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-list__item {
-  color: white;
+  color: #ffffff;
   font-family: Roboto;
+  padding: 8px 18px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.hasNested ::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 14px;
+  width: 8px;
+  height: 6px;
+  background-image: url("./assets/triangle.svg");
+  background-size: cover;
+  background-position: center;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+@media only screen and (min-width: 767px) {
+  .nav-list__item:hover {
+    color: #eb5757;
+  }
+  .hasNested :hover::after {
+    transform: none;
+  }
 }
 
 .logo__circle {
@@ -41,6 +73,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__phone-number {
+  font-family: Roboto;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.nested-list {
+  position: absolute;
+  top: 30px;
 }
 
 ul,

@@ -17,14 +17,44 @@
           </div>
         </div>
       </div>
-      
+
       <nav class="header__nav">
         <ul class="nav-list">
           <li class="nav-list__item">
             <a href="#" class="nav-list__link">Главная</a>
           </li>
-          <li class="nav-list__item">
+          <li class="nav-list__item hasNested">
             <a href="#" class="nav-list__link">Основное меню</a>
+            <ul class="nested-list">
+              <li class="nested-list__item">
+                <a href="#" class="nested-list__link">Заказать верстку</a>
+              </li>
+              <li class="nested-list__item">
+                <a href="#" class="nested-list__link"
+                  >Отправить макет на проверку</a
+                >
+              </li>
+              <li class="nested-list__item">
+                <a href="#" class="nested-list__link">Хочу работать у вас</a>
+              </li>
+              <li class="nested-list__item hasNested">
+                <a href="#" class="nested-list__link"
+                  >Есть предложение по работе с клиентами</a
+                >
+                <!-- Еще один вложенный список -->
+                <ul class="nested-list">
+                  <li class="nested-list__item">
+                    <a href="#" class="nested-list__link">У меня есть оффер</a>
+                  </li>
+                  <li class="nested-list__item">
+                    <a href="#" class="nested-list__link">Сделать партнером</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nested-list__item">
+                <a href="#" class="nested-list__link">Подраздел 3</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-list__item">
             <a href="#" class="nav-list__link">Наши сервисы</a>
@@ -34,6 +64,11 @@
           </li>
         </ul>
       </nav>
+
+      <div class="header__phone">
+        <img src="./assets/phone_icon.svg" alt="Телефон" />
+        <span class="header__phone-number">+1 (321) 222 - 33 - 33</span>
+      </div>
     </header>
     <script type="module" src="/main.js"></script>
   </body>

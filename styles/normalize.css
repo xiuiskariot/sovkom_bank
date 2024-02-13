@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+    padding: 0;
+  list-style: none;
+}
+
+:root {
+  --main-dark-color: #131417;
+  --secondary-dark-color: #252830;
+  --main-font-color: #FFF;
+  --action-nav-element: #eb5757;
+  --action-element-color: #f2994a;
+}
+body {
+  height: 100vh;
+  background: url(../assets/alpaka_bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: bold;
+  font-weight: 500;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
